@@ -1,6 +1,6 @@
 document.querySelector(".c1").addEventListener("click",changeThemeHome);
 function changeThemeHome(){
-    document.querySelector("body").classList.add("theme1-body");
+    document.querySelector("body").classList.toggle("theme1-body");
     document.querySelector(".my-container").classList.toggle("theme1-nav");
     document.querySelector(".flip-card-back").classList.toggle("theme1-flip");
     document.querySelector(".home-button").classList.toggle("theme1-homeButton");
