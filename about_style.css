@@ -160,3 +160,12 @@ body{
     width: 100px !important;
   }
 }
+
+/* INTERACTIVITY */
+.theme1-body{ 
+  background: linear-gradient(500deg, #0a0a0a, #41413f, #5a5b5b9b);
+}
+/* NAV BAR */
+.theme1-nav{
+  background: linear-gradient(500deg, #0a0a0a, #41413f, #5a5b5b9b);
+}

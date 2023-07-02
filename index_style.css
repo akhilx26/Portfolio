@@ -117,7 +117,7 @@ body{
     height: 200px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     perspective: 1000px;
-    border-radius: 15%;
+    border-radius: 100%;
   }
   
   /* This container is needed to position the front and back side */
@@ -147,7 +147,7 @@ body{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    /* background-color: #bbb; */
     color: black;
     border-radius: 15%;
   }
@@ -160,7 +160,7 @@ body{
     color: white;
     padding: 30px;
     transform: rotateY(180deg);
-    border-radius: 10%;
+    border-radius: 100%;
   }
 
 /* Contact */
@@ -219,6 +219,24 @@ body{
 }
 .button-change2:hover,.button-change3:hover{
     background-color: #070707 !important;
+}
+.button-change3{
+    visibility: hidden;
+    position: relative;
+}
+.button-change3::after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid white !important;
+    padding: 7px;
+    padding-top: 2px;
+    padding-top: 9px;
+    padding-left: 12px;
+    padding-right: 10px;
+    border-radius: 10px;
+    content: "Go Default!";
 }
 .button-change4{
     color: black !important;
